@@ -1,6 +1,17 @@
 package projects;
 
-public class Project_03 {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import scripts.Base;
+
+public class Project_03 extends Base {
+    @BeforeMethod
+    public void setPage(){
+        driver.get("https://techglobal-training.com/frontend/project-3");
+    }
     /* Test Case 01 - Validate the default Book your trip form
         Navigate to https://techglobal-training.com/frontend/project-3
         Validate that the “One way” radio button is displayed enabled and selected by default
@@ -14,6 +25,19 @@ public class Project_03 {
         Validate that the “Passenger 1” category label and dropdown are displayed and “Adult (16-64)” is the default
         Validate that the “BOOK” button is displayed and enabled
      */
+    @Test(priority = 1, description = "Validate the default Book your trip form")
+    public void validateTheDefaultBookYourTripForm(){
+        WebElement oneWayButton = driver.findElement(By.cssSelector(".mr-1[value='One way']"));
+        WebElement roundTripButton = driver.findElement(By.cssSelector(".mr-1[value='Round trip']"));
+        Assert.assertTrue(oneWayButton.isDisplayed());
+        Assert.assertTrue(oneWayButton.isEnabled());
+        Assert.assertTrue(oneWayButton.isSelected());
+        assert oneWayButton.isSelected();
+        Assert.assertTrue(roundTripButton.isDisplayed());
+        Assert.assertTrue(roundTripButton.isEnabled());
+        Assert.assertFalse(roundTripButton.isSelected());
+        assert !roundTripButton.isSelected();
+    }
 
     /* Test Case 02 - Validate the Book your trip form when Round trip is selected
         Navigate to https://techglobal-training.com/frontend/project-3
