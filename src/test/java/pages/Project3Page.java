@@ -54,16 +54,16 @@ public class Project3Page {
     @FindBy(css = ".field:nth-child(7) > label")
     public WebElement numberOfPassengersLabel;
 
-    @FindBy(css = (".field:nth-child(7) select"))
+    @FindBy(css = ".field:nth-child(7) select")
     public WebElement numberOfPassengerSelect;
 
     @FindBy(css = ".field:nth-child(7) option")
     public WebElement numberOfPassengersDropDown;
 
-    @FindBy(css = (".field:nth-child(8) select"))
+    @FindBy(css = ".field:nth-child(8) select")
     public WebElement passengerOneSelect;
 
-    @FindBy(css = (".field:nth-child(9) select"))
+    @FindBy(css = ".field:nth-child(9) select")
     public WebElement passengerTwoSelect;
 
     @FindBy(css = ".field:nth-child(8) > label")
@@ -75,40 +75,40 @@ public class Project3Page {
     @FindBy(css = "button[class*='Button_c_button__w4+7K null']")
     public WebElement bookButton;
 
-    @FindBy(css = (".field:nth-child(3) select"))
+    @FindBy(css = ".field:nth-child(3) select")
     public WebElement fromStateSelect;
 
-    @FindBy(css = (".field:nth-child(4) select"))
+    @FindBy(css = ".field:nth-child(4) select")
     public WebElement toStateSelect;
 
-    @FindBy(css = (".field:nth-child(5) .control input[name='month']"))
+    @FindBy(css = ".field:nth-child(5) .control input[name='month']")
     public WebElement month;
 
-    @FindBy(css = (".field:nth-child(5) .control input[name='day']"))
+    @FindBy(css = ".field:nth-child(5) .control input[name='day']")
     public WebElement day;
 
-    @FindBy(css = (".field:nth-child(5) .control input[name='year']"))
+    @FindBy(css = ".field:nth-child(5) .control input[name='year']")
     public WebElement year;
 
-    @FindBy(css = (".field:nth-child(6) .control input[name='month']"))
+    @FindBy(css = ".field:nth-child(6) .control input[name='month']")
     public WebElement monthReturn;
 
-    @FindBy(css = (".field:nth-child(6) .control input[name='day']"))
+    @FindBy(css = ".field:nth-child(6) .control input[name='day']")
     public WebElement dayReturn;
 
-    @FindBy(css = (".field:nth-child(6) .control input[name='year']"))
+    @FindBy(css = ".field:nth-child(6) .control input[name='year']")
     public WebElement yearReturn;
 
-    @FindBy(css = (".ml-3 h3"))
+    @FindBy(css = ".ml-3 h3")
     public WebElement fromToConfirm;
 
-    @FindBy(css = (".ml-3 div:nth-child(2) h3"))
+    @FindBy(css = ".ml-3 div:nth-child(2) h3")
     public WebElement returnFrom;
 
-    @FindBy(css = (".ml p"))
+    @FindBy(css = ".ml p")
     public WebElement returnConfirmDate;
 
-    @FindBy(css = (".ml-3 p"))
+    @FindBy(css = ".ml-3 p")
     public List<WebElement> dateOfFlightShow;
 
 }
