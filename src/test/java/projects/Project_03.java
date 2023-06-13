@@ -128,7 +128,7 @@ public class Project_03 extends Base {
         DropdownHandler.selectByVisibleText(project3Page.toStateSelect,"Florida");
         Waiter.pause(3);
         project3Page.month.sendKeys("6");
-        project3Page.day.sendKeys("18");
+        project3Page.day.sendKeys("19");
         project3Page.year.sendKeys("2023");
 
         DropdownHandler.selectByIndex(project3Page.numberOfPassengerSelect,0);
@@ -139,7 +139,7 @@ public class Project_03 extends Base {
         Assert.assertTrue(project3Page.departLabel.isDisplayed());
         Assert.assertEquals(project3Page.fromToConfirm.getText(),"IL to FL");
 
-        String [] expectedResults = {"Sun Jun 18 2023","Number of Passengers: 1","Passenger 1: Senior (65+)","Cabin class: Business"};
+        String [] expectedResults = {"Mon Jun 19 2023","Number of Passengers: 1","Passenger 1: Senior (65+)","Cabin class: Business"};
 
         for (int i = 0; i < project3Page.dateOfFlightShow.size(); i++) {
             Assert.assertEquals(project3Page.dateOfFlightShow.get(i).getText(),expectedResults[i]);
