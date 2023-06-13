@@ -90,8 +90,6 @@ public class Project_03 extends Base {
         Assert.assertTrue(project3Page.returnDatePicker.isDisplayed());
         Assert.assertTrue(project3Page.returnDatePicker.isEnabled());
         Assert.assertTrue(project3Page.numberOfPassengersLabel.isDisplayed());
-
-
         Assert.assertTrue(project3Page.numberOfPassengersDropDown.isDisplayed());
         Assert.assertEquals(project3Page.numberOfPassengersDropDown.getAttribute("value"),"1");
         Assert.assertTrue(project3Page.passengerOneLabel.isDisplayed());
@@ -124,13 +122,11 @@ public class Project_03 extends Base {
 
         project3Page.cabinClassList.get(2).click();
 
-        //fromState.get()
-        //project3Page.fromState
         DropdownHandler.selectByVisibleText(project3Page.fromStateSelect, "Illinois");
-        Waiter.pause(5);
+        Waiter.pause(3);
 
         DropdownHandler.selectByVisibleText(project3Page.toStateSelect,"Florida");
-
+        Waiter.pause(3);
         project3Page.month.sendKeys("6");
         project3Page.day.sendKeys("18");
         project3Page.year.sendKeys("2023");
