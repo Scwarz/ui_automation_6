@@ -178,7 +178,7 @@ public class Project_03 extends Base {
         DropdownHandler.selectByVisibleText(project3Page.toStateSelect,"Illinois");
 
         project3Page.month.sendKeys("6");
-        project3Page.day.sendKeys("10");
+        project3Page.day.sendKeys("19");
         project3Page.year.sendKeys("2023");
 
         project3Page.monthReturn.sendKeys("7");
@@ -200,7 +200,7 @@ public class Project_03 extends Base {
             Assert.assertEquals(project3Page.dateOfFlightShow.get(i).getText(),expectedResults[i]);
         }
 
-        Assert.assertEquals(project3Page.returnConfirmDate.getText(),"Tue Jul 18 2023");
+        Assert.assertEquals(project3Page.returnConfirmDate.getText(),"Wed Jul 19 2023");
     }
     /* Test Case 05 - Validate the booking for 2 passengers and one way
         Navigate to https://techglobal-training.com/frontend/project-3
